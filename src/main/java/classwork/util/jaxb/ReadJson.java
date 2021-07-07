@@ -2,7 +2,7 @@ package classwork.util.jaxb;
 
 import classwork.da.jaxb.JaxbSerializeWriter;
 import classwork.da.jaxb.JsonJaxbReader;
-import classwork.entity.jaxb.Fallback;
+//import classwork.entity.jaxb.Fallback;
 
 import java.io.IOException;
 
@@ -17,12 +17,12 @@ public class ReadJson {
     public static void main(String[] args) throws IOException {
 
         System.out.println("Считываем данные из файла " + SOURCE_FILE + "\n");
-        Fallback srcData = new JsonJaxbReader().read(SOURCE_FILE);
-        System.out.println(srcData);
+//        Fallback srcData = new JsonJaxbReader().read(SOURCE_FILE);
+//        System.out.println(srcData);
         System.out.println();
 
         System.out.println("Записываем данные в файл " + RESULT_FILE + "\n");
-        new JaxbSerializeWriter().customSerializeWriter(srcData, RESULT_FILE);
+//        new JaxbSerializeWriter().customSerializeWriter(srcData, RESULT_FILE);
     }
 
 }
